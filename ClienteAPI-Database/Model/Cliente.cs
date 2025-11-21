@@ -1,7 +1,10 @@
-﻿namespace ClienteAPI_Database.Model
+﻿using System.ComponentModel.DataAnnotations;
+
+namespace ClienteAPI_Database.Model
 {
     public class Cliente
     {
+        [Key]
         public int clienteId {  get; set; }
         public string nombreCliente { get; set;}
         public string apellidoCliente { get; set;}

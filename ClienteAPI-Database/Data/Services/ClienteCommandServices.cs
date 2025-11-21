@@ -1,6 +1,9 @@
-﻿namespace ClienteAPI_Database.Data.Services
+﻿using ClienteAPI_Database.Data.Interface;
+
+namespace ClienteAPI_Database.Data.Services
 {
-    public class ClienteCommandServices
+    public class ClienteCommandServices:IClienteCommandServices()
     {
+
     }
 }

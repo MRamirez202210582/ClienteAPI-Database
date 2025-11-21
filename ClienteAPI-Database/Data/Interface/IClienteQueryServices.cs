@@ -1,8 +1,10 @@
-﻿namespace ClienteAPI_Database.Data.Interface
+﻿using ClienteAPI_Database.Model;
+
+namespace ClienteAPI_Database.Data.Interface
 {
     public interface IClienteQueryServices
     {
-        public void GetCliente();
+        public List<Cliente> GetCliente();
         public void GetClienteById();
     }
 }
