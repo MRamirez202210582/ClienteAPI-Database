@@ -20,7 +20,21 @@ namespace ClienteAPI_Database.Data.Services
         }
         public void EditCliente(int clienteId, string nombreCliente, string apellidoCliente, int edad, string direccion, string pais, string ciudad, int telefono, string correo, int DNI)
         {
+            var cliente = dbContext.Cliente.Find(clienteId);
+            if (cliente != null )
+            {
+                cliente.nombreCliente=nombreCliente;
+                cliente.apellidoCliente=apellidoCliente;
+                cliente.edad = edad;
+                cliente.direccion = direccion;
+                cliente.pais = pais;
+                cliente.ciudad = ciudad;
+                cliente.telefono = telefono;
+                cliente.correo = correo;
+                cliente.DNI = DNI;
 
+                dbContext.SaveChanges();
+            }
         }
         public void DeleteCliente(int clienteId)
         {

@@ -20,7 +20,22 @@ namespace ClienteAPI_Database.Controllers
         [HttpGet]
         public IActionResult GetCliente()
         {
+            clienteQueryServices.GetCliente();
+            return View();
+        }
 
+        [HttpPatch]
+        public IActionResult EditarCliente(EditarCliente editarCliente)
+        {
+            clienteCommandServices.EditCliente(editarCliente.clienteId, editarCliente.nombreCliente, editarCliente.apellidoCliente, editarCliente.edad, editarCliente.direccion, editarCliente.pais, editarCliente.ciudad, editarCliente.telefono, editarCliente.correo, editarCliente.DNI);
+            return View();
+        }
+
+        [HttpDelete]
+        public IActionResult DeleteCliente(int clienteId)
+        {
+            clienteCommandServices.DeleteCliente(clienteId);
+            return View();
         }
     }
 }

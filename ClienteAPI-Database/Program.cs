@@ -1,4 +1,14 @@
+using ClienteAPI_Database.Data;
+using ClienteAPI_Database.Data.Interface;
+using ClienteAPI_Database.Data.Services;
+using Microsoft.EntityFrameworkCore;
+
 var builder = WebApplication.CreateBuilder(args);
+
+builder.Services.AddDbContext<AppDbContext>(options => options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
+
+builder.Services.AddTransient<IClienteCommandServices, ClienteCommandServices>();
+builder.Services.AddTransient<IClienteQueryServices, ClienteQueryServices>();
 
 // Add services to the container.
 
