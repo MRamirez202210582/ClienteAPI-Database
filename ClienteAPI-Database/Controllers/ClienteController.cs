@@ -1,83 +1,26 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using ClienteAPI_Database.Data.Interface;
+using ClienteAPI_Database.Data.Resources;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
 namespace ClienteAPI_Database.Controllers
 {
-    public class ClienteController : Controller
+    [ApiController]
+    [Route("api/[Controller]")]
+    public class ClienteController(IClienteCommandServices clienteCommandServices , IClienteQueryServices clienteQueryServices) : Controller
     {
-        // GET: ClienteController
-        public ActionResult Index()
-        {
-            return View();
-        }
-
-        // GET: ClienteController/Details/5
-        public ActionResult Details(int id)
-        {
-            return View();
-        }
-
-        // GET: ClienteController/Create
-        public ActionResult Create()
-        {
-            return View();
-        }
-
-        // POST: ClienteController/Create
         [HttpPost]
-        [ValidateAntiForgeryToken]
-        public ActionResult Create(IFormCollection collection)
+        public IActionResult InsertarCliente(CreateCliente createCliente)
         {
-            try
-            {
-                return RedirectToAction(nameof(Index));
-            }
-            catch
-            {
-                return View();
-            }
-        }
-
-        // GET: ClienteController/Edit/5
-        public ActionResult Edit(int id)
-        {
+            clienteCommandServices.InsertCliente(createCliente.nombreCliente, createCliente.apellidoCliente,createCliente.edad,createCliente.direccion,createCliente.pais,createCliente.ciudad,createCliente.telefono,createCliente.correo,createCliente.DNI);
             return View();
+
         }
 
-        // POST: ClienteController/Edit/5
-        [HttpPost]
-        [ValidateAntiForgeryToken]
-        public ActionResult Edit(int id, IFormCollection collection)
+        [HttpGet]
+        public IActionResult GetCliente()
         {
-            try
-            {
-                return RedirectToAction(nameof(Index));
-            }
-            catch
-            {
-                return View();
-            }
-        }
 
-        // GET: ClienteController/Delete/5
-        public ActionResult Delete(int id)
-        {
-            return View();
-        }
-
-        // POST: ClienteController/Delete/5
-        [HttpPost]
-        [ValidateAntiForgeryToken]
-        public ActionResult Delete(int id, IFormCollection collection)
-        {
-            try
-            {
-                return RedirectToAction(nameof(Index));
-            }
-            catch
-            {
-                return View();
-            }
         }
     }
 }
