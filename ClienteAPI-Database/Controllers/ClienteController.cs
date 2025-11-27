@@ -13,7 +13,7 @@ namespace ClienteAPI_Database.Controllers
         public IActionResult InsertarCliente(CreateCliente createCliente)
         {
             clienteCommandServices.InsertCliente(createCliente.nombreCliente, createCliente.apellidoCliente,createCliente.edad,createCliente.direccion,createCliente.pais,createCliente.ciudad,createCliente.telefono,createCliente.correo,createCliente.DNI);
-            return View();
+            return Ok(createCliente);
 
         }
 
@@ -21,21 +21,21 @@ namespace ClienteAPI_Database.Controllers
         public IActionResult GetCliente()
         {
             clienteQueryServices.GetCliente();
-            return View();
+            return Ok(clienteQueryServices.GetCliente());
         }
 
         [HttpPatch]
         public IActionResult EditarCliente(EditarCliente editarCliente)
         {
             clienteCommandServices.EditCliente(editarCliente.clienteId, editarCliente.nombreCliente, editarCliente.apellidoCliente, editarCliente.edad, editarCliente.direccion, editarCliente.pais, editarCliente.ciudad, editarCliente.telefono, editarCliente.correo, editarCliente.DNI);
-            return View();
+            return Ok();
         }
 
         [HttpDelete]
         public IActionResult DeleteCliente(int clienteId)
         {
             clienteCommandServices.DeleteCliente(clienteId);
-            return View();
+            return Ok();
         }
     }
 }

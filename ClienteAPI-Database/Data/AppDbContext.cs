@@ -1,6 +1,7 @@
 ﻿using ClienteAPI_Database.Model;
 using Microsoft.EntityFrameworkCore;
 
+
 namespace ClienteAPI_Database.Data
 {
     public class AppDbContext:DbContext
