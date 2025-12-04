@@ -38,6 +38,7 @@ namespace ClienteAPI_Database.Data.Services
         }
         public void DeleteCliente(int clienteId)
         {
+            var cliente = dbContext.Cliente.First(c => c.clienteId == clienteId);
             dbContext.Remove(clienteId);
             dbContext.SaveChanges();
         }

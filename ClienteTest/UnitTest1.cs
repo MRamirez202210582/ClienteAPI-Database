@@ -36,7 +36,7 @@ namespace ClienteTest
         {
             commandServices.InsertCliente("Fabricio", "Espinoza", 18, "AV.SON BORJA", "Chorrillos", "Lima", 963852741, "fespinozagmail.com", 74859612);
             var cliente=queryServices.GetCliente();
-            Assert.AreEqual("Rick", cliente[0].nombreCliente);
+            Assert.AreEqual("Fabricio", cliente[0].nombreCliente);
         }
 
         [Test]
@@ -58,11 +58,11 @@ namespace ClienteTest
             dbContext.Cliente.Add(cliente);
             dbContext.SaveChanges();
 
-            commandServices.EditCliente(cliente.clienteId,"Omar","Zavaleta",20,"av.san isidro","peru","lima",963741852,"ozavaleta@gmail.com",74859632);
+            commandServices.EditCliente(cliente.clienteId, "Fabricio", "Zavaleta",20,"av.san isidro","peru","lima",963741852,"ozavaleta@gmail.com",74859632);
 
             var actulizado = queryServices.GetCliente().ToList();
 
-            Assert.AreEqual("Omar", actulizado[0].nombreCliente);
+            Assert.AreEqual("Fabricio", actulizado[0].nombreCliente);
         }
 
         [Test]
