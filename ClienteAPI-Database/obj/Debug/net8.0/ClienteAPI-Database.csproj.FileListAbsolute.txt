@@ -104,3 +104,4 @@ C:\Visual Studios trabajos\ClienteAPI-Database\ClienteAPI-Database\obj\Debug\net
 C:\Visual Studios trabajos\ClienteAPI-Database\ClienteAPI-Database\obj\Debug\net8.0\ClienteAPI-Database.pdb
 C:\Visual Studios trabajos\ClienteAPI-Database\ClienteAPI-Database\obj\Debug\net8.0\ClienteAPI-Database.genruntimeconfig.cache
 C:\Visual Studios trabajos\ClienteAPI-Database\ClienteAPI-Database\obj\Debug\net8.0\ref\ClienteAPI-Database.dll
+C:\Visual Studios trabajos\ClienteAPI-Database\ClienteAPI-Database\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll

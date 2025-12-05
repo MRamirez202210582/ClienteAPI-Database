@@ -1,11 +1,13 @@
 ﻿using ClienteAPI_Database.Data.Interface;
 using ClienteAPI_Database.Data.Resources;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
 namespace ClienteAPI_Database.Controllers
 {
     [ApiController]
+    [Authorize]
     [Route("api/[Controller]")]
     public class ClienteController(IClienteCommandServices clienteCommandServices , IClienteQueryServices clienteQueryServices) : Controller
     {
