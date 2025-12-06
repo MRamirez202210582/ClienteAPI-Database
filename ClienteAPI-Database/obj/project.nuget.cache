@@ -1,11 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "LGomasj88EcLk04ctpYguk5VxlIaGfv+CRpMPmo5W2WWBcOXSj/deWYnByVMBnx7Tn1GYcSv2gBRfyR4xXwEQA==",
+  "dgSpecHash": "z0ZEIOaTXU56eEEPdQT1HcFP05vEMbZEZyN1LETlRYpe4jEsyUxpBxfzOFptj/49E6YodPMXvVz8xjZM4TPWsA==",
   "success": true,
   "projectFilePath": "C:\\Visual Studios trabajos\\ClienteAPI-Database\\ClienteAPI-Database\\ClienteAPI-Database.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\PC\\.nuget\\packages\\azure.core\\1.38.0\\azure.core.1.38.0.nupkg.sha512",
     "C:\\Users\\PC\\.nuget\\packages\\azure.identity\\1.11.4\\azure.identity.1.11.4.nupkg.sha512",
+    "C:\\Users\\PC\\.nuget\\packages\\bcrypt.net-next\\4.0.3\\bcrypt.net-next.4.0.3.nupkg.sha512",
     "C:\\Users\\PC\\.nuget\\packages\\microsoft.aspnetcore.antiforgery\\2.3.0\\microsoft.aspnetcore.antiforgery.2.3.0.nupkg.sha512",
     "C:\\Users\\PC\\.nuget\\packages\\microsoft.aspnetcore.authentication.abstractions\\2.3.0\\microsoft.aspnetcore.authentication.abstractions.2.3.0.nupkg.sha512",
     "C:\\Users\\PC\\.nuget\\packages\\microsoft.aspnetcore.authentication.core\\2.3.0\\microsoft.aspnetcore.authentication.core.2.3.0.nupkg.sha512",

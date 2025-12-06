@@ -1,11 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "lmtrgXlvmv3lZSWlAJehYjWw7e0KQyjIygAXw6LGQ5wvt40+1+0tlItBUk2CXYcEr4ZYaChd+wHE5LFu+gzaoA==",
+  "dgSpecHash": "D6JKDOjONVE6UAMtuJQnx3hN50EZ5mVKhRe/ISHzKHlW2RaJjmbEiIx8sNP1FmC4ZtDHKRoGkaPfzbQqjonDPg==",
   "success": true,
   "projectFilePath": "C:\\Visual Studios trabajos\\ClienteAPI-Database\\ClienteTest\\ClienteTest.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\PC\\.nuget\\packages\\azure.core\\1.38.0\\azure.core.1.38.0.nupkg.sha512",
     "C:\\Users\\PC\\.nuget\\packages\\azure.identity\\1.11.4\\azure.identity.1.11.4.nupkg.sha512",
+    "C:\\Users\\PC\\.nuget\\packages\\bcrypt.net-next\\4.0.3\\bcrypt.net-next.4.0.3.nupkg.sha512",
     "C:\\Users\\PC\\.nuget\\packages\\coverlet.collector\\6.0.0\\coverlet.collector.6.0.0.nupkg.sha512",
     "C:\\Users\\PC\\.nuget\\packages\\microsoft.aspnetcore.antiforgery\\2.3.0\\microsoft.aspnetcore.antiforgery.2.3.0.nupkg.sha512",
     "C:\\Users\\PC\\.nuget\\packages\\microsoft.aspnetcore.authentication.abstractions\\2.3.0\\microsoft.aspnetcore.authentication.abstractions.2.3.0.nupkg.sha512",
