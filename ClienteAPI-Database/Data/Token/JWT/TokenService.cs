@@ -14,15 +14,15 @@ namespace ClienteAPI_Database.Data.Token.JWT
     {
         private readonly TokenSettings _tokenSettings = tokenSettings.Value;
 
-        public string GenerateToken(Cliente cliente)
+        public string GenerateToken(Usuario usuario)
         {
             var key=Encoding.ASCII.GetBytes(_tokenSettings.Secretkey);
             var tokenDescriptor = new SecurityTokenDescriptor
             {
                 Subject = new ClaimsIdentity(new[]
                 {
-                    new Claim(ClaimTypes.Sid,cliente.clienteId.ToString()),
-                    new Claim(ClaimTypes.Name,cliente.correo),
+                    new Claim(ClaimTypes.Sid,usuario.usuarioId.ToString()),
+                    new Claim(ClaimTypes.Name,usuario.correo),
                 }),
                 Expires = DateTime.UtcNow.AddHours(1),
                 SigningCredentials = new SigningCredentials(new SymmetricSecurityKey(key), SecurityAlgorithms.HmacSha256Signature)

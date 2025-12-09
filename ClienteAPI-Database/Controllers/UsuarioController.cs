@@ -11,11 +11,12 @@ namespace ClienteAPI_Database.Controllers
     [Route("api/[Controller]")]
     public class UsuarioController(IHashingService hashingService,IClienteCommandServices clienteCommandServices,IClienteQueryServices clienteQueryServices,ITokenServices tokenServices) : Controller
     {
-        public IActionResult LogIn() {
+        public IActionResult LogIn(LoginResource loginResource) {
+            var usuario
 
         }
 
-        public IActionResult Register(CreateCliente createCliente)
+        public IActionResult Register(SignInResource signInResource)
         {
 
         }
