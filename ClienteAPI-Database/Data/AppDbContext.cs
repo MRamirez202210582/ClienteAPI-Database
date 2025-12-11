@@ -10,6 +10,8 @@ namespace ClienteAPI_Database.Data
 
         public DbSet<Cliente> Cliente {get;set;}
 
+        public DbSet<Usuario> Usuario { get;set;}
+
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);
