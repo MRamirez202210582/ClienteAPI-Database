@@ -73,6 +73,8 @@ builder.Services.AddCors(options =>
 
 builder.Services.AddTransient<IClienteCommandServices, ClienteCommandServices>();
 builder.Services.AddTransient<IClienteQueryServices, ClienteQueryServices>();
+builder.Services.AddTransient<IUsuarioCommandServices, UsuarioCommandServices>();
+builder.Services.AddTransient<IUsuarioQueryServices, UsuarioQueryServices>();
 
 // Add services to the container.
 
