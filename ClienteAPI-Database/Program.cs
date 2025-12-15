@@ -75,6 +75,8 @@ builder.Services.AddTransient<IClienteCommandServices, ClienteCommandServices>()
 builder.Services.AddTransient<IClienteQueryServices, ClienteQueryServices>();
 builder.Services.AddTransient<IUsuarioCommandServices, UsuarioCommandServices>();
 builder.Services.AddTransient<IUsuarioQueryServices, UsuarioQueryServices>();
+builder.Services.AddTransient<IHashingService,HashingServices>();
+builder.Services.AddTransient<ITokenServices,TokenService>();
 
 // Add services to the container.
 

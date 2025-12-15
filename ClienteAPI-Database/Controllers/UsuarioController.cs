@@ -32,7 +32,7 @@ namespace ClienteAPI_Database.Controllers
         public IActionResult Register(SignInResource signInResource)
         {
             var usuario = usuarioQueryServices.GetAll().FirstOrDefault(u => u.correo == signInResource.correo);
-            if (usuario == null)
+            if (usuario != null)
             {
                 return Unauthorized(new { Message = "UsuarioInvalido" });
             }
