@@ -15,3 +15,4 @@ namespace ClienteAPI_Database.Data.Services
         }
     }
 }
+//BCrypt.Net.SaltParseException: 'Invalid salt version'
