@@ -1,7 +1,7 @@
 using ClienteAPI_Database.Data;
 using ClienteAPI_Database.Data.Interface;
 using ClienteAPI_Database.Data.Services;
-using ClienteAPI_Database.Data.Token.JWT;
+using Cliente_Database.Data.Token.JWT;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
@@ -73,10 +73,7 @@ builder.Services.AddCors(options =>
 
 builder.Services.AddTransient<IClienteCommandServices, ClienteCommandServices>();
 builder.Services.AddTransient<IClienteQueryServices, ClienteQueryServices>();
-builder.Services.AddTransient<IUsuarioCommandServices, UsuarioCommandServices>();
-builder.Services.AddTransient<IUsuarioQueryServices, UsuarioQueryServices>();
-builder.Services.AddTransient<IHashingService,HashingServices>();
-builder.Services.AddTransient<ITokenServices,TokenService>();
+
 
 // Add services to the container.
 

@@ -1,7 +1,7 @@
-﻿namespace ClienteAPI_Database.Data.Token.JWT
+﻿namespace Cliente_Database.Data.Token.JWT
 {
     public class TokenSettings
     {
-        public string Secretkey { get; set; }   
+        public string SecretKey { get; set; }   
     }
 }
